@@ -8,12 +8,15 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import javaes.wordpress.com.domain.Contact;
 
 /**
  * @author https://javaes.wordpress.com/
  *
  */
+@Component
 public class ContactDAO extends BaseDAO implements IGenericDAO {
 
 	public Contact getContactById(Long id) throws SQLException {
